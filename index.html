@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site da Biblioteca Escolar para consulta e administração do acervo.">
+  <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+  <title>Biblioteca Escolar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#/" aria-label="Página inicial">
+        <span class="brand-icon">B</span>
+        <span>
+          <strong>Biblioteca</strong>
+          <small>Escolar</small>
+        </span>
+      </a>
+
+      <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="main-nav">
+        <a href="#/">Início</a>
+        <a href="#/sobre">Sobre</a>
+        <a href="#/produtos">Acervo</a>
+        <a href="#/contato">Contato</a>
+        <a href="#/login" id="login-link" class="nav-login">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Biblioteca Escolar</strong>
+        <p>Um espaço para leitura, pesquisa e conhecimento.</p>
+      </div>
+      <p> &copy; Projeto acadêmico desenvolvido por Alan Bezerra</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
